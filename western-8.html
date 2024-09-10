@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>MENS-PANT SECTION</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+	.a{
+		font-family: Broadway;
+	}
+	.b{
+		font-family: Brush Script Std;
+	}
+	.d{
+		color: #20a809;
+		font-family: Britannic;
+	}
+</style>
+<body>
+	<div class="container">
+	<h3 align="center" class="d">WESTERN<hr></h3>
+		<div class="row">
+			<div class="col-6" align="center">
+				<img src="images/w8.jpg" alt="w8"><br><br>
+			</div>
+			<div class="col-6">
+				<h6>WESTERN-8</h6>
+				<p> Product Name: WESTERN-8<br>
+					Product Size:M,L,XL,2XL<br>
+				Description: Feel like Comfort<br>
+				Product Price: 300Rs</p>
+				<label>Quantity</label>
+				<input type="number" name="quan" id="quan" placeholder="Enter Quantity"><br><br>
+				<label>Total Price</label>
+				<input type="number" id="price" value="300"><br><br>
+				<button onclick="calc()" class="button">Calculate</button><br><br>
+				<h3 id="result"></h3><br>
+				<a href="https://buy.stripe.com/test_fZebJtagSdNOa5i5li" class="button" style="margin-left: 50px;">Pay</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	function calc(){
+		num1=300;
+		num2=document.getElementById("quan").value;
+		document.getElementById("result").innerHTML="TOTAL PRICE: Rs." +num1 * num2+ ".00";
+	}
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
